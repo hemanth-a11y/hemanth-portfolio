@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hemanth | Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+    header {
+      background: #161b22;
+      padding: 2rem;
+      text-align: center;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; color: #8b949e; }
+
+    .container { padding: 2rem; max-width: 1000px; margin: auto; }
+    .section-title { font-size: 2rem; margin-bottom: 1rem; color: #58a6ff; }
+
+    .project {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .project h3 { color: #79c0ff; }
+    .project p { margin: 0.5rem 0; }
+    .project span {
+      font-size: 0.9rem;
+      color: #8b949e;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hemanth (Benny)</h1>
+    <p>Electronics & Robotics Hobbyist | ICSE Class 10 Student</p>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2 class="section-title">About Me</h2>
+      <p>
+        I'm a passionate young maker exploring embedded systems, drones, games, and automation.
+        I enjoy building cool stuff with Arduino, ESP32, Python, and FPV gear. Always learning, always tinkering.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Projects</h2>
+
+      <div class="project">
+        <h3>Railway-Style Clock Display</h3>
+        <p>This is a custom-designed clock inspired by railway station boards. It features a pixel-style train engine animation that pulls the time across a 64x32 LED matrix. The clock includes a real-time date at the bottom and a "Platform No" title at the top. An ESP32 with GPS ensures accurate time, and the display is customizable via a web interface. Synchronization across multiple displays is possible using ESP-NOW protocol.</p>
+        <span>Tech: ESP32, LED Matrix, GPS, Arduino, ESP-NOW, Web Server</span>
+      </div>
+
+      <div class="project">
+        <h3>Gesture-Controlled Dodge Game</h3>
+        <p>A real-time game built with Python where the player uses hand gestures captured via webcam to dodge obstacles falling from above. It uses OpenCV and MediaPipe to track hand movements and integrates with a game engine (Pygame) for interaction, scorekeeping, and game loop logic.</p>
+        <span>Tech: Python, OpenCV, MediaPipe, Pygame</span>
+      </div>
+
+      <div class="project">
+        <h3>Arduino Robotic Arm</h3>
+        <p>This robotic arm is powered by an Arduino Nano and MG90S servos. It interprets hand gestures using a Python-based webcam tracker and translates them into servo movements. Designed for educational purposes, it helps understand inverse kinematics and gesture-based control systems.</p>
+        <span>Tech: Arduino Nano, MG90S, Python, OpenCV</span>
+      </div>
+
+      <div class="project">
+        <h3>ESP32 Smart Lock</h3>
+        <p>A compact smart locking system that allows remote control of a physical lock using an ESP32 microcontroller. It features basic authentication logic, a relay to control the lock mechanism, and a future-proof design for adding RFID or keypad access. Can be controlled via a web interface hosted on the ESP32.</p>
+        <span>Tech: ESP32, Relay Module, Web Server, Arduino</span>
+      </div>
+
+      <div class="project">
+        <h3>ESP32 Digital Clock</h3>
+        <p>This project is a simple but reliable digital clock made using an ESP32 and a display module. It shows real-time hours, minutes, and seconds. It was an early prototype for the more complex railway-style clock.</p>
+        <span>Tech: ESP32, LED Display, Arduino</span>
+      </div>
+
+      <div class="project">
+        <h3>Cinewhoop FPV Drone Build</h3>
+        <p>A 4S-powered 3-inch Cinewhoop drone with a SpeedyBee BEE35 frame. Built for stable indoor and outdoor FPV flights, it uses SpeedyBee F4 flight controller, TX800 VTX, and Radiomaster ExpressLRS receiver system. Inspired by YouTube builds, it balances DIY customization with professional performance.</p>
+        <span>Tech: SpeedyBee BEE35, TX800, F4 FC, ExpressLRS, RP1, Radiomaster Pocket</span>
+      </div>
+
+      <div class="project">
+        <h3>Jarvis-Style Python Voice Assistant</h3>
+        <p>A personal voice assistant coded in Python featuring offline support, custom male voice, and dark-themed GUI. It can execute basic commands, respond to queries, open applications, and control system functions. Built with ~600 lines of code, it is fully customizable and works without an internet connection.</p>
+        <span>Tech: Python, Tkinter, pyttsx3, SpeechRecognition, Offline Mode</span>
+      </div>
+          <div class="project">
+        <h3>Agricultural Robot</h3>
+        <p>An advanced multi-purpose agricultural robot equipped with a NodeMCU (ESP8266) for wireless communication. It can perform tasks like cutting grass, sowing seeds, spraying water, and leveling soil. The robot is programmable, making it ideal for automating basic agricultural operations.</p>
+        <span>Tech: NodeMCU ESP8266, Automation, Agricultural Tools</span>
+      </div>
+
+      <div class="project">
+        <h3>Bluetooth Controlled Car</h3>
+        <p>A remotely operated car built using Arduino Uno, L293D motor driver, and a Bluetooth module. The Bluetooth module receives commands from a smartphone or controller and sends them to the Arduino, which processes and transmits the instructions to the motor driver to control movement.</p>
+        <span>Tech: Arduino Uno, L293D Motor Driver, Bluetooth Module</span>
+      </div>
+
+      <div class="project">
+        <h3>Home Automation</h3>
+        <p>A creative and functional home automation system using NodeMCU (ESP8266) and relay modules. It allows users to control household appliances like lights and fans through a smartphone or web dashboard over Wi-Fi. The system integrates real-time switching, device status feedback, and can be scaled with sensors for smart lighting, temperature control, and more. It's a step toward building a fully connected smart home environment.</p>
+        <span>Tech: NodeMCU ESP8266, Relay Module, Web Dashboard, IoT</span>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    <p>© 2025 Hemanth (Benny). All rights reserved.</p>
+  </footer>
+</body>
+</html>
